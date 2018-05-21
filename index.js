@@ -9,7 +9,7 @@ getHtml(originUrl).then((data) => {
       getHtml(url).then((data) => {
         parseTargetHtml(data).then((data) => {
           console.log(`${data.title} start download`)
-          getHtml(data.src).then((fileData) => {
+          getHtml(data.src, 'binary').then((fileData) => {
             savefileToPath(data.title, fileData)
           })
         })

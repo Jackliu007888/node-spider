@@ -8,7 +8,7 @@ function getHtml(url, encoding) {
   return new Promise((resolve, reject) => {
     var req = https.get(url, function (res) {
       var result = ''
-      encoding && res.setEncoding("binary")
+      encoding && res.setEncoding(encoding)
       res.on('data', function (d) {
         result += d
       })
