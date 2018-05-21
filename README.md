@@ -11,5 +11,7 @@ url = 'https://www.rails365.net'
 ## 运行
 
 git clone git@github.com:Jackliu007888/node-spider.git
+
 npm i
+
 node index.js
